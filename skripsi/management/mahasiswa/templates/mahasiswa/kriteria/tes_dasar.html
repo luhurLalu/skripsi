@@ -1,0 +1,46 @@
+{% extends 'layout/dashboard/index.html' %} 
+
+{% block content %}
+<title>Home | SPK </title>
+    <section class="content">
+        <div class="container-fluid">
+            <div class="block-header">
+                <h2>Nilai Tes Dasar</h2>
+            </div>
+            <div class="row clearfix">
+            <div class="col-md-12">
+                <div class="card">    
+    <div class="body">
+        <div class="table-responsive">
+            <table class="table table-bordered table-striped table-hover js-basic-example dataTable" id="DataTables_Table_0" role="grid" aria-describedby="DataTables_Table_0_info">
+                <thead>
+                    <th>No</th>                    
+                    <th>NIM</th>
+                    <th>Nama</th>
+                    <th>Nilai Multimedia</th>
+                    <th>Nilai Jaringan</th>
+                    <th>Nilai RPL</th>                                        
+                </thead>
+                <tbody>
+                    {% for tes in tesdasar %}
+                    <tr>
+                        <td>{{forloop.counter}}</td>                        
+                        <td>{{tes.0}}</td>
+                        <td>{{tes.1}}</td>
+                        <td>{{tes.2}}</td>
+                        <td>{{tes.3}}</td>
+                        <td>{{tes.4}}</td>                                                                        
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+            </div>
+            </div>
+        </div>
+    </section>
+
+{% endblock %}
+

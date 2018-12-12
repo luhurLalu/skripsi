@@ -1,0 +1,24 @@
+{
+    "name": "SpkPromethee",
+    "authors": [
+      "lalu <oonklalu@gmail.com>"
+    ],
+    "description": "Skripsi",
+    "main": "",
+    "license": "MIT",
+    "homepage": "",
+    "ignore": [
+      "**/.*",
+      "node_modules",
+      "bower_components",
+      "static/components",
+      "test",
+      "tests"
+    ],
+    "dependencies": {
+      "jquery": "^3.2.1",
+      "bootstrap": "^3.3.7",
+      "admin-lte": "adminlte#^2.4.2",
+      "chart.js": "Chart.js#2"
+    }
+  }
